@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@layer components {
+    /* Container principal */
+    .login-container {
+        @apply min-h-screen bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center;
+    }
+
+    /* Conteúdo do formulário */
+    .login-content {
+        @apply bg-white p-8 rounded-lg shadow-lg w-full max-w-md;
+    }
+
+    /* Título */
+    .login-title {
+        @apply text-2xl font-semibold text-center text-gray-800 mb-2;
+    }
+
+    /* Subtítulo */
+    .login-subtitle {
+        @apply text-sm text-center text-gray-600 mb-6;
+    }
+
+    /* Formulário */
+    .login-form {
+        @apply space-y-4;
+    }
+
+    /* Grupos de formulário */
+    .form-group {
+        @apply mb-4;
+    }
+
+    /* Rótulos */
+    .form-label {
+        @apply block text-sm font-medium text-gray-700;
+    }
+
+    /* Entradas de formulário */
+    .form-input {
+        @apply mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-shadow duration-300;
+    }
+
+    /* Botão */
+    .form-button {
+        @apply w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all duration-300;
+    }
+
+    /* Link de registro */
+    .register-link {
+        @apply text-center mt-4;
+    }
+
+    .register-link p {
+        @apply text-sm text-gray-600;
+    }
+
+    .register-link a {
+        @apply text-blue-600 hover:text-blue-800;
+    }
+
+    /* Mensagem de erro */
+    .alert {
+        @apply mt-4 p-4 rounded-lg;
+    }
+    
+    .alert-success {
+        @apply bg-green-100 text-green-800;
+    }
+    
+    .alert-error {
+        @apply bg-red-100 text-red-800;
+    }
+}

@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@layer components{
+    /* resources/css/app.css */
+
+    
+.main-container {
+    @apply w-full max-w-none mx-0 p-6;
+}
+
+.header {
+    @apply bg-blue-500 text-white p-4 rounded-lg shadow-md;
+}
+
+.content-header {
+    @apply flex justify-between items-center;
+}
+
+.title-logo {
+    @apply text-3xl font-bold;
+}
+
+.list-nav-link {
+    @apply flex space-x-4;
+}
+
+.nav-link {
+    @apply hover:text-gray-200 transition-colors duration-300;
+}
+
+.form-container {
+    @apply mt-8;
+}
+
+.form-title {
+    @apply text-3xl font-bold text-blue-700;
+}
+
+.alert {
+    @apply mt-4 p-4 rounded-lg;
+}
+
+.alert-success {
+    @apply bg-green-100 text-green-800;
+}
+
+.alert-error {
+    @apply bg-red-100 text-red-800;
+}
+
+.form {
+    @apply mt-6 space-y-4;
+}
+
+.form-group {
+    @apply mb-4;
+}
+
+.form-label {
+    @apply block text-lg font-medium text-gray-700;
+}
+
+.form-input {
+    @apply mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:outline-none transition-shadow duration-300;
+}
+
+.form-button {
+    @apply w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300;
+}
+.btn-success {
+    @apply bg-green-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 transition-all duration-300;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Permite ajuste automático */
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: center;
+    white-space: nowrap; /* Evita quebra de linhas estranhas */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td a {
+    margin: 0 5px; /* Espaçamento entre ações */
+}
+
+}
