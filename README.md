@@ -1,4 +1,4 @@
-# CRUD Show Tecnologia
+# CRUD Show Tecnologia!
 
 Este projeto é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido em PHP para gerenciar informações de tecnologia.
 
