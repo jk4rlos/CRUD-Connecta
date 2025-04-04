@@ -101,7 +101,7 @@
                     </form>
                 </div>
                 
-                <!-- Back Button - Agora dentro do card e abaixo dos botões de ação -->
+                <!-- Back Button -->
                 <div class="flex justify-center mt-6">
                     <a href="{{ route('user.index') }}" class="inline-flex items-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
