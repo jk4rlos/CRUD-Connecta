@@ -1,177 +1,99 @@
-# CRUD Show Tecnologia!
+<h1 align="center">
+  CRUD Show Tecnologia!
+</h1>
 
-Este projeto é um sistema de CRUD (Create, Read, Update, Delete) desenvolvido em PHP para gerenciar informações de tecnologia.
+<p align="center">
+  Um sistema CRUD (Create, Read, Update, Delete) em Laravel para gerenciar informações de tecnologia.
+</p>
 
-## Configurações do Projeto
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a> •
+  <a href="#-requisitos">Requisitos</a> •
+  <a href="#-como-rodar">Como Rodar</a> •
+  <a href="#-autor">Autor</a>
+</p>
 
-- **Linguagem:** PHP 8 ou superior
-- **Servidor Web:** WampServer 64-bit
-- **Banco de Dados:** MySQL 5.7 ou superior
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Frameworks Utilizados:**
-    - Bootstrap 5.0 (para estilização)
-    - jQuery 3.6 (para interatividade)
-- **Gerenciador de Dependências:** Composer
+<p align="center">
+  <img src="URL_DO_SEU_GIF_OU_IMAGEM.gif" alt="Demonstração do CRUD">
+</p>
 
-## Estrutura de Diretórios
+## 🛠️ Tecnologias
 
-- `/assets`: Arquivos estáticos como CSS, JS e imagens.
-- `/includes`: Arquivos PHP reutilizáveis (conexão com banco, cabeçalho, rodapé).
-- `/pages`: Páginas principais do CRUD.
-- `/sql`: Scripts SQL para criação e configuração do banco de dados.
-- `/vendor`: Diretório gerenciado pelo Composer para dependências.
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP_8.2+-777BB4?style=flat-square&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js_22+-339933?style=flat-square&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Composer-885630?style=flat-square&logo=composer&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+</p>
 
-## Requisitos
+## 📋 Requisitos
 
-1. Instale o WampServer e configure o ambiente.
-2. Crie um banco de dados MySQL chamado `crud_tecnologia`.
-3. Importe o arquivo SQL localizado em `/sql/database.sql`.
-4. Configure o arquivo `/includes/db.php` com as credenciais do banco de dados.
-5. Instale as dependências do projeto executando `composer install` no diretório raiz.
+Para rodar este projeto localmente, você precisará ter as seguintes ferramentas instaladas:
 
-## Versões
+| Ferramenta | Versão Mínima | Comando de Verificação |
+| :--- | :--- | :--- |
+| **PHP** | 8.2+ | `php -v` |
+| **Composer** | - | `composer --version` |
+| **Node.js** | 22+ | `node -v` |
+| **Git** | - | `git -v` |
 
-- **PHP:** 7.4.33
-- **MySQL:** 5.7.36
-- **Bootstrap:** 5.0.2
-- **jQuery:** 3.6.0
-- **Composer:** 2.5.8
+## 🚀 Como Rodar
 
-## Como Executar
+Siga os passos abaixo para configurar e executar o projeto:
 
-1. Configurar o arquivo .env:
-   - Duplicar o arquivo ".env.example" e renomear para ".env"
-   - Alterar no arquivo ".env" as credenciais do banco de dados
+1.  **Clone o repositório**
+    ```bash
+    git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git) .
+    ```
 
-2. Instalar as dependências do PHP:
-   composer install
+2.  **Configure o Ambiente**
+    * Copie o arquivo `.env.example` para `.env`
+        ```bash
+        cp .env.example .env
+        ```
+    * Abra o arquivo `.env` e configure suas credenciais do banco de dados (MySQL).
 
-3. Gerar a chave no arquivo .env:
-   php artisan key:generate
-   
-## Requisitos
+3.  **Instale as Dependências (PHP)**
+    ```bash
+    composer install
+    ```
 
-* PHP 8.2 ou superior - Conferir a versão: php -v
-* Composer - Conferir a instalação: composer --version
-* Node.js 22 ou superior - Conferir a versão: node -v
-* GIT - Conferir a instalação: git -v
+4.  **Instale as Dependências (JS)**
+    ```bash
+    npm install
+    ```
 
-## Como rodar o projeto baixado
+5.  **Gere a Chave da Aplicação**
+    ```bash
+    php artisan key:generate
+    ```
 
-Baixar os arquivos do GitHub.
-```
-git clone <repositorio_url> .
-```
-```
-git clone  .
-```
+6.  **Crie as Tabelas do Banco**
+    ```bash
+    php artisan migrate
+    ```
 
-- Duplicar o arquivo ".env.example" e renomear para ".env".
+7.  **Inicie os Servidores**
+    * Inicie o servidor do Laravel (em um terminal):
+        ```bash
+        php artisan serve
+        ```
+    * Inicie o compilador de assets (em outro terminal):
+        ```bash
+        npm run dev
+        ```
 
-Alterar no arquivo .env as credenciais do banco de dados.
-```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=users
-DB_USERNAME=root
-DB_PASSWORD=
-```
+8.  **Acesse**
+    * Abra seu navegador em `http://127.0.0.1:8000`
 
-Instalar as dependências do PHP
-```
-composer install
-```
+---
 
-Instalar as dependências do Node.js.
-```
-npm install
-```
+## 👨‍💻 Autor
 
-Gerar a chave para o arquivo .env.
-```
-php artisan key:generate
-```
+Feito por **José Carlos de Souza Neto**
 
-Executar as migration para criar a base de dados e as tabelas.
-```
-php artisan migrate
-```
-
-Iniciar o projeto criado com Laravel.
-```
-php artisan serve
-```
-
-Executar as bibliotecas Node.js.
-```
-npm run dev
-```
-
-Acessar o conteúdo padrão do Laravel
-```
-http://127.0.0.1:8000
-```
-
-## Sequência para criar o projeto
-
-Criar o projeto com Laravel
-```
-composer create-project laravel/laravel .
-```
-
-Iniciar o projeto criado com Laravel.
-```
-php artisan serve
-```
-
-Acessar o conteúdo padrão do Laravel
-```
-http://127.0.0.1:8000
-```
-
-Criar a Controller.
-```
-php artisan make:controller NomeController
-```
-```
-php artisan make:controller UserController
-```
-
-Criar a View.
-```
-php artisan make:view nome
-```
-```
-php artisan make:view users/create
-```
-
-Executar as migration para criar a base de dados e as tabelas.
-```
-php artisan migrate
-```
-
-Instalar as dependências do Node.js.
-```
-npm install
-```
-
-Executar as bibliotecas Node.js.
-```
-npm run dev
-```
-
-Criar um arquivo Request com validações do formulário.
-```
-php artisan make:request NomeDoRequest
-```
-```
-php artisan make:request UserRequest
-```
-
-Traduzir para português [Módulo pt-BR](https://github.com/lucascudo/laravel-pt-BR-localization).
-
-
-## Autor
-
-Este projeto foi desenvolvido por [José Carlos de Souza Neto](https://github.com/jk4rlos).
+<a href="https://github.com/jk4rlos" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+</a>
