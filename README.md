@@ -1,5 +1,5 @@
 <h1 align="center">
-  CRUD Show Tecnologia!
+  CRUD SConnecta!
 </h1>
 
 <p align="center">
