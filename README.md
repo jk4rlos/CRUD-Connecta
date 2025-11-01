@@ -1,5 +1,5 @@
 <h1 align="center">
-  CRUD SConnecta!
+  CRUD Connecta!
 </h1>
 
 <p align="center">
