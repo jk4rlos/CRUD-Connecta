@@ -45,7 +45,7 @@ Siga os passos abaixo para configurar e executar o projeto:
 
 1.  **Clone o repositório**
     ```bash
-    git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+    git clone https://github.com/jk4rlos/CRUD-Connecta.git
     ```
 
 2.  **Configure o Ambiente**
